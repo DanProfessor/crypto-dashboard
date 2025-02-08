@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2 class="logo">liqfinity</h2>
+        <ul>
+            <li class="active">Dashboard</li>
+            <li>Borrow</li>
+            <li>My Loans</li>
+            <li>Provide Liquidity</li>
+            <li>Leaderboards</li>
+            <li>My Referrals</li>
+            <li class="disabled">Swap & Bridge (Coming Soon)</li>
+        </ul>
+    </div>
+    
+    <div class="main-content">
+        <header>
+            <h1>Dashboard</h1>
+            <div class="user-info">User: <span id="username">Mmadu Daniel</span></div>
+        </header>
+        
+        <div class="alert">⚠️ This is a testnet platform. Funds are not real.</div>
+        
+        <div class="cards">
+            <div class="card">
+                <h3>Portfolio Balance</h3>
+                <p class="balance">$<span id="portfolio-balance">105,694.33334</span></p>
+            </div>
+            <div class="card">
+                <h3>Credit Line</h3>
+                <p class="credit-line">$<span id="credit-line">98,530.49000</span></p>
+            </div>
+            <div class="card">
+                <h3>Available Credit</h3>
+                <p class="available-credit">$<span id="available-credit">667.83286</span></p>
+            </div>
+        </div>
+        
+        <div class="crypto-section">
+            <h2>Stablecoins</h2>
+            <div class="crypto-card">
+                <p>USDT Tether</p>
+                <p>Price: $1.00000</p>
+                <p>Balance: <span id="usdt-balance">5,026.50048</span></p>
+            </div>
+        </div>
+        
+        <div class="charts">
+            <h2>Portfolio Performance</h2>
+            <canvas id="portfolioChart"></canvas>
+        </div>
+    </div>
+</body>
+</html>
